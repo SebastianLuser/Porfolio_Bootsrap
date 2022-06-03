@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Porfolio_Bootstrap</title>  
+</head>
+<body>
+        <!-- HEADER -->
+        <header class="bg-dark text-white"> 
+            <!-- LOGO -->
+            <div class="container text-center">
+                <h1>Sebastian Luser</h1>
+                <p class="lead">
+                    Enjoys the development and design of web pages with css and javascript
+                </p>
+            </div>
+            <!-- <div class="container d-flex justify-content-start">
+                <img src="./Images/Logo.JPG" alt="Logo">
+            </div> -->
+            <!-- NAVEGATIONBAR -->
+            <nav>
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a href="Index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About.html" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Proyects.html" class="nav-link active">Proyects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Resume.html" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- MAIN -->
+        <main class="bg-success text-black">
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="offset-4 col-4">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Images/Captura2.JPG" height="480px" class="d-block w-100" >
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/Captura.JPG" height="480px" class="d-block w-100">
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="bg-dark text-white">
+            <div class="container">
+                <nav class=" d-flex justify-content-center">
+                    <a href="#" class="p-2">Instagram</a>
+                    <a href="#" class="p-2">Facebook</a>
+                    <a href="#" class="p-2">Twitter</a>
+                    <a href="#" class="p-2">Linkedin</a>
+                </nav>
+                <section class="d-flex flex-column justify-content-end" >
+                    <p>mail@gmail.com</p>
+                    <p>54911342532</p>
+                </section>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
