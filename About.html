@@ -5,67 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@100&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/a358678dcd.js" crossorigin="anonymous"></script>
     <!-- Style link -->
     <link rel="stylesheet" href="./css/style.css">
-
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
     <title>Porfolio_Bootstrap</title>  
 </head>
 <body>
+    <div class="box">
         <!-- HEADER -->
-        <header class="bg-dark text-white"> 
-            <!-- LOGO -->
-            <div class="container text-center">
-                <h1>Sebastian Luser</h1>
-                <p class="lead">
-                    Enjoys the development and design of web pages with css and javascript
-                </p>
-            </div>
-            <!-- <div class="container d-flex justify-content-start">
-                <img src="./Images/Logo.JPG" alt="Logo">
-            </div> -->
+        <header> 
             <!-- NAVEGATIONBAR -->
-            <nav>
-                <ul class="nav nav-pills justify-content-center">
-                    <li class="nav-item">
-                        <a href="Index.html" class="nav-link ">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="About.html" class="nav-link active">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Proyects.html" class="nav-link">Proyects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Resume.html" class="nav-link">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- LOGO -->
+                    <a class="navbar-brand" href="#"><img src="./Images/Logo.JPG" alt="Logo" width="240px"></a>
+                    <!-- NAV -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto nav-pills" id="lista">
+                            <li class="nav-item ">
+                                <a href="index.html" class="nav-link ">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="About.html" class="nav-link">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Proyects.html" class="nav-link">Proyects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Resume.html" class="nav-link">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>  
         </header>
         <!-- MAIN -->
-        <main class="bg-success text-black py-5">
-                <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="mb-3">Work Experience</h3>
-                        <div class="card b-3">
+        <main>
+            <div class="container" id="about">
+                <div class="row ">
+                    <h3 class="mb-3" id="about__titulo">About Me</h3>
+                    <div class="card b-3" id="about__card">
+                        <div class="card-body">
+                            <div class="mx-3" id="about__text">
+                                <div id="about__perfil">
+                                    <img src="Images/WhatsApp Image 2022-04-22 at 6.48.43 PM.jpeg" alt="Perfil" >
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus culpa cupiditate iusto inventore non, itaque ut unde repellat, distinctio, repellendus asperiores quos fugiat cumque repudiandae natus magni voluptas facilis. Aspernatur assumenda officia veniam. Quisquam enim officiis quia, neque debitis reprehenderit velit totam ratione deserunt ex vel magni iusto tempore ab cum obcaecati, provident inventore fugit alias tenetur iure? Accusamus possimus quam, ea quis eum eligendi repellendus amet ut consequuntur quo, totam explicabo officiis laudantium eaque dolor quisquam voluptas nostrum distinctio error ipsum tenetur expedita fuga adipisci quibusdam! Animi cupiditate, esse nemo quia accusamus, magnam expedita itaque in, neque omnis odit explicabo unde blanditiis voluptatum nam vero? Dolorem, consequatur. Voluptate praesentium enim quod dignissimos sed saepe numquam suscipit commodi error! Molestias, alias iure sunt ut voluptate dolore labore doloribus nisi voluptatum aliquam 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <h3 class="mb-3" id="about__work">Work Experience</h3>
+                        <div class="card b-3" id="about__card">
                             <div class="card-body">
                                 <div class="mx-3">
+                                    <h4>BBVA</h4>
+                                    <div><strong>2020-2021</strong></div>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit perspiciatis sit sunt non ab cum quaerat ad consectetur corporis doloribus ut corrupti repellat velit labore, soluta dignissimos laborum ipsam iste.</p>
+                                    <ul class="list group list-group-flush">
+                                        <li class="list-group-item">Lorem ipsum dolor sit amet consectetur.</li>
+                                        <li class="list-group-item">Lorem ipsum dolor sit amet consectetur.</li>   
+                                        <li class="list-group-item">Lorem ipsum dolor sit amet consectetur.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <h3 class="mb-3">Skills</h3>
-                        <div class="card b-3">
+                    <div class="col  my-2">
+                        <h3 id="about__skills">Skills</h3>
+                        <div class="card b-3" id="about__card">
                             <div class="card-body">
                                 <div class="mx-3">
                                     <h4>Front End</h4>
@@ -77,26 +98,42 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card b-3" id="about__card">
+                            <div class="card-body">
+                                <div class="mx-3">
+                                    <h4>Lenguages</h4>
+                                    <ul>
+                                        <li>English</li>
+                                        <li>Spanish</li>
+                                        <li>German</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
         <!-- FOOTER -->
-        <footer class="bg-dark text-white">
-            <div class="container">
-                <nav class=" d-flex justify-content-center">
-                    <a href="#" class="p-2">Instagram</a>
-                    <a href="#" class="p-2">Facebook</a>
-                    <a href="#" class="p-2">Twitter</a>
-                    <a href="#" class="p-2">Linkedin</a>
-                </nav>
-                <section class="d-flex flex-column justify-content-end" >
-                    <p>mail@gmail.com</p>
-                    <p>54911342532</p>
-                </section>
-            </div>
+        <footer>
+                <div class="row">
+                    <nav class="offset-lg-3 col-lg-5" id="redes">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+                        </ul>
+                    </nav>
+                    <section class="offset-lg-2 col-lg-2 " id="info" >
+                        <p>mail@gmail.com</p>
+                        <p>54911342532</p>
+                    </section>
+                </div>
         </footer>
+    </div>
+    <!-- script de js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    background-color: #647d94;
+}
+/*GRID*/
+.box{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto  1fr  auto;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer";
+}
+.row{
+    margin-top: 0; 
+    margin-right: 0;
+    margin-left:0;
+}
+
+header{
+    background-color: hwb(0 15% 84% / 0.697);
+    grid-area: header;
+}
+#lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#lista li{
+    text-align: center;
+    background-color: #344c5c;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    margin: 0.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.2rem;
+}
+#lista li:hover{
+    background-color: cadetblue;
+}
+
+#lista li a{
+    text-decoration: none;
+    color: #F3F4FC;
+}
+#lista li a:hover{
+    color: #F3F4FC;
+}
+
+main{
+    background-color: #647d94;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+}
+
+/* HOME */
+#card{
+    padding: 1rem;
+}
+#card h2{
+    color: #F3F4FC;
+    font-family: 'Courgette', cursive;
+    font-size: 2rem;
+    margin: 1rem;
+}
+#card h3{
+    color: #F3F4FC;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+#card p{
+    color: #F3F4FC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+    width: 60%;
+}
+/* ABOUT */
+#about{
+    color: #F3F4FC;
+    font-family: 'Poppins', sans-serif;
+}
+#about__titulo{
+    color: #F3F4FC;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin: 1rem;
+}
+#about__card{
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+}
+#about__text{
+    display: flex;
+}
+#about__text p{
+    margin: 1rem;
+}
+#about__perfil{
+    margin: 1rem;
+}
+#about__perfil img{
+    width: 180px;
+    height: 240px;
+}
+/* FOOTER */
+footer{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    background-color: #040c0b;
+    grid-area: footer;
+}
+#redes{
+    display: flex;
+    justify-content: center;
+}
+#redes ul{
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+#redes ul li{
+    position: relative;
+    list-style: none;
+    margin: 0.6rem;
+}
+#redes ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #ffff;
+    font-size: 1.8em;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#redes ul li a:hover{
+    transform: translateY(-20px);
+}
+#redes ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    transform: skewX(45deg) translateX(150px);
+}
+#redes ul li a:hover::before{
+    transform: skewX(45deg) translateX(-150px);
+}
+
+#info{
+    display: flex;
+    justify-content:end;
+    flex-direction: column;
+    color: #F3F4FC;
+}
+/*MEDIA QUERYS*/
+@media screen and (min-width: 320px) {
+    .box{
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+    }
+}
+@media screen and (min-width: 480px) {
+    .box{
+        grid-template-rows: auto  1fr auto;
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+    }
+}
+@media screen and (min-width: 600px) {
+    .box{
+        grid-template-rows: auto  1fr auto;
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+    }
+} 
+@media screen and (min-width: 768px) {
+    .box{
+        grid-template-rows: auto  1fr auto;
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+    }
+}
+@media screen and (min-width: 1024px) {
+    .box{
+        grid-template-rows: auto  1fr auto;
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+    }
+}
+@media screen and (min-width: 1200px) {
+    .box{
+        grid-template-rows: auto  1fr auto;
+        grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+    }
+}
